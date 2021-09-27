@@ -1,5 +1,158 @@
 .App {
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 98vh;
+}
+
+.certificate{
+  width: 1040px;
+  height: 680px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.certificate2{
+  width: 740px;
+  height: 680px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content{
+  display:flex;
+  position:absolute;
+  height:60%;
+  width:1000px;
+}
+
+.content2{
+  display:flex;
+  position:absolute;
+  height:60%;
+  width:700px;
+  margin-top: 0%;
+}
+
+.contenttext{
+  display:flex;
+  flex-direction:column;
+  width:100%;
+  margin-top:2%;
+  z-index: 2;
+  position:absolute;
+
+}
+
+.awardimage{
+  display:flex;
+  align-items:center;
+  height:80%;
+  margin-top:5%;
+}
+
+.awardimage2{
+  display:flex;
+  height:50%;
+  margin-top:5%;
+}
+
+.logoHolder2{
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  margin-right: none;
+}
+
+.awardimage2{
+  display:flex;
+  align-items:center;
+  height:80%;
+  margin-top:5%;
+}
+
+input{
+  font-size: 100%;
+  text-align: center;
+  margin:1%;
+  width: 50%;
+  height: 5%;
+}
+
+.signin{
+  width: 30%;
+  height: 7%;
+}
+
+.select{
+  font-size: 100%;
+  margin:1%;
+  width: 50%;
+  height: 5%;
+}
+
+.div1{
+  width: 100px;
+  height: 100px;
+  background-color: black;
+  z-index: 1;
+  position: absolute;
+  opacity: 0.5;
+}
+
+.div2{
+  width: 100px;
+  height: 100px;
+  background-color: rgba(51, 170, 51, 0);
+  z-index: 2;
+  margin-left: 5%;
+  position: absolute;
+}
+
+.whydiv{
+  opacity: 1;
+}
+
+.Button{
+  padding: 2%;
+  margin-top: 100%;
+}
+
+.inner1{
+  border:10px solid #05438E;
+  width: 1000px;
+  height: 690px;
+}
+
+.inner2{
+  border:10px solid #05438E;
+  width: 700px;
+  height: 490px;
+}
+
+.font-link {
+  font-family: 'Train One', cursive;
+  font-weight: bold;
+}
+
+.font-link-1 {
+  font-family: 'Varela Round', sans-serif;
+  font-size: 250%;
+  font-weight: bold;
+  color:#05438E;
+  margin-top: 3%;
+}
+
+.font-link-2 {
+  font-family: 'Varela Round', sans-serif;
+  font-size: 180%;
+  font-weight: bold;
+  color:#05438E;
+  margin-top: 1%;
 }
 
 .App-logo {

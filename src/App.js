@@ -1,24 +1,31 @@
-import logo from './logo.svg';
 import './App.css';
+import { useState } from 'react';
+import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
+import Home from './components/Home';
+import Print from './components/Print';
+import SignIn from './components/SignIn';
+
 
 function App() {
+  const [Details,setDetails] = useState({name:'Jason Statham',award:'dftc',img:'peer',print:false,quarter:'Q1',year:'2021'})
+  const [signin,setsignin] = useState({user:'',password:'',success:false})
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <Router>
+        <Switch>
+          <Route path='/' exact>
+              {signin.success === true?<Home setDetails={setDetails} Details={Details}/>:<SignIn signin={signin} setsignin={setsignin}/>}
+          </Route>
+          <Route path='/home' exact>
+              <Home setDetails={setDetails} Details={Details}/>
+          </Route>
+          <Route path='/certificate'>
+              <Print Details={Details} setDetails={setDetails}/>
+          </Route>
+        </Switch>
+        </Router>
+      </div>
   );
 }
 
