@@ -1,22 +1,24 @@
 .App {
   text-align: center;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 98vh;
+  height: 97vh;
+  width: 100%;
+  margin: 0;
 }
 
 .certificate{
   width: 1040px;
-  height: 680px;
+  height: 690px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .certificate2{
-  width: 740px;
-  height: 680px;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -27,6 +29,25 @@
   position:absolute;
   height:60%;
   width:1000px;
+}
+
+.card{
+  display: flex;
+  justify-content: center;
+  padding: 1%;
+  width:140px;
+  height:150px;
+  border:5px solid black;
+  margin:2%;
+  border-radius: 5%;
+}
+
+
+.card:active{
+  width:140px;
+  height:150px;
+  border:5px solid #05438E;
+  margin:2%;
 }
 
 .content2{
@@ -56,8 +77,9 @@
 
 .awardimage2{
   display:flex;
-  height:50%;
+  height:90%;
   margin-top:5%;
+  align-items: center;
 }
 
 .logoHolder2{
@@ -93,6 +115,23 @@ input{
   margin:1%;
   width: 50%;
   height: 5%;
+  text-align: center;
+}
+
+.left{
+  width:40%;
+  display:flex;
+  flex-direction:column;
+  max-height:100%;
+}
+
+.leftHide{
+  width:40%;
+  display:flex;
+  flex-direction:column;
+  border:1px solid black;
+  max-height:100%;
+  display: none;
 }
 
 .div1{
@@ -119,13 +158,14 @@ input{
 
 .Button{
   padding: 2%;
-  margin-top: 100%;
+
 }
 
 .inner1{
   border:10px solid #05438E;
   width: 1000px;
   height: 690px;
+  margin-top: 0.5%;
 }
 
 .inner2{

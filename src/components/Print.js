@@ -13,12 +13,12 @@ const Print =(props) => {
       const print = () => {
         window.print()
         setTimeout(() => {
-          props.setDetails({name:props.Details.name,award:props.Details.award,print:false,quarter:props.Details.quarter,year:props.Details.year})
+          props.setDetails({name:props.Details.name,award:props.Details.award,awardIMG:props.Details.awardIMG,print:false,quarter:props.Details.quarter,year:props.Details.year})
         }, 100);
       }
 
     return(
-    <div>
+    <div style={{width:'100%',height:'100%',display:'flex',justifyContent:'center',alignItems:'center'}}>
         <Certificate Details={props.Details} setDetails={props.setDetails}/>
         {props.Details.print !== true?
         <div style={{margin:'2%'}}>

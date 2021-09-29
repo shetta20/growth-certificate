@@ -4,10 +4,11 @@ import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import Home from './components/Home';
 import Print from './components/Print';
 import SignIn from './components/SignIn';
+import peer from './images/peer.png'
 
 
 function App() {
-  const [Details,setDetails] = useState({name:'Jason Statham',award:'dftc',img:'peer',print:false,quarter:'Q1',year:'2021'})
+  const [Details,setDetails] = useState({name:'Jason Statham',award:'dftc',awardIMG:peer,img:'peer',print:false,quarter:'Q1',year:'2021'})
   const [signin,setsignin] = useState({user:'',password:'',success:false})
 
   return (

@@ -8,7 +8,7 @@ const ContentPreview = (props) => {
     return(        
     <div className="content2">
         <div className="awardimage2">
-            <img src={props.Details.award === 'champ'?champ:props.Details.award === 'peer'?peer:props.Details.award === 'dftc'?dftc:props.Details.award === 'rookie'?rookie:null} style={{opacity:'0.25',zIndex:'1',position:'absolute',display:'flex',marginLeft:'5%',width:'30%',marginTop:'80px',marginLeft:'60px'}}/>
+            <img src={props.Details.awardIMG === champ?champ:props.Details.awardIMG === peer?peer:props.Details.awardIMG === dftc?dftc:props.Details.awardIMG === rookie?rookie:null} style={{opacity:'0.25',zIndex:'1',position:'absolute',display:'flex',marginLeft:'5%',width:'30%',marginTop:'0px',marginLeft:'60px'}}/>
         </div>
         <div className="contenttext">
             <div>
