@@ -13,6 +13,7 @@ const Home = (props) => {
 <div style={{width:'100%',height:'100%',justifyContent:'center',alignItems:'center'}}>
         <div style={{display:'flex',justifyContent:'center',width:'100%',height:'97vh',flexDirection:'row'}}>
             <div className="left">
+                    <p style={{fontSize:'120%',margin:'0%',fontStyle:'bold'}}>Select Image:</p>
                     <div style={{height:'50%',border:'1px solid black',borderRadius:'3%',marginRight:'2%'}}>
                     <CardHolder Details={props.Details} setDetails={props.setDetails}/>
                     </div>

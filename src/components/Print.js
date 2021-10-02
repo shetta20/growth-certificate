@@ -23,7 +23,7 @@ const Print =(props) => {
         {props.Details.print !== true?
         <div style={{margin:'2%'}}>
             <Link to='/'>   
-                <button style={{width:'10%',padding:'2%'}}>Back</button>
+                <button style={{padding:'2%'}}>Back</button>
             </Link>
         </div>:null}
     </div>)

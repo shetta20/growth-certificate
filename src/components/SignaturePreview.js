@@ -1,5 +1,6 @@
 import React from 'react'
 import signature from '../images/Signature.png'
+import signature2 from '../images/signature2.png'
 
 const SignaturePreview = () => {
     return(        <div style={{display:'flex',marginLeft:'8%',marginRight:'8%',height:'20%',marginTop:'45%'}}>
@@ -16,7 +17,7 @@ const SignaturePreview = () => {
       </div>
     </div>
     <div style={{display:'flex',width:'50%',justifyContent:'center',alignItems:'center',flexDirection:'column'}}>
-    <img src={signature} style={{height:'55%',width:'45%'}}/>
+    <img src={signature2} style={{height:'55%',width:'45%'}}/>
       <div className="font-link-1" style={{fontSize:'80%',color:'black',margin:'0%'}}>
         Stewart Wayne
       </div>
