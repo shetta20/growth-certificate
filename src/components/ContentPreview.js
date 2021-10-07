@@ -19,7 +19,7 @@ const ContentPreview = (props) => {
                 <p style={{fontSize:'120%',margin:'0'}}>has been awarded with the</p>
             </div>
             <div className="font-link-2">
-                {props.Details.award === 'champ'?'KPI Champion':props.Details.award === 'peer'?'Peer Award':props.Details.award === 'dftc'?'Dont F the customer':props.Details.award === 'rookie'?'Best Rookie':null}
+                {props.Details.award === 'champ'?'KPI Champion Award':props.Details.award === 'peer'?'Peer Award':props.Details.award === 'dftc'?'Dont F the customer Award':props.Details.award === 'rookie'?'Best Rookie Award':null}
             </div>
             <div style={{marginTop:'0',fontSize:'80%'}}>
             <p style={{fontSize:'130%'}}>{`For the Quarter ${props.Details.quarter} ${props.Details.year}`}</p>
