@@ -6,7 +6,7 @@ import Content from './Content'
 const Certificate = (props) => {
     return(    
     <div>
-    <div className="certificate">
+    <div className={props.print === true?"certificate":"nocertificate"}>
       <div className="inner1">
       <Logo />
       <Content Details={props.Details} setDetails={props.setDetails}/>

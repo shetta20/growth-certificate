@@ -24,6 +24,10 @@
   align-items: center;
 }
 
+.nocertificate{
+  display: none;
+}
+
 .content{
   display:flex;
   position:absolute;

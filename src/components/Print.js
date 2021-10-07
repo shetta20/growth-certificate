@@ -19,11 +19,14 @@ const Print =(props) => {
 
     return(
     <div style={{width:'100%',height:'100%',display:'flex',justifyContent:'center',alignItems:'center'}}>
-        <Certificate Details={props.Details} setDetails={props.setDetails}/>
+        <Certificate print={props.Details.print} Details={props.Details} setDetails={props.setDetails}/>
         {props.Details.print !== true?
         <div style={{margin:'2%'}}>
+            <div style={{display:'flex',justifyContent:'center',alignItems:'center',fontSize:'150%'}}>
+              Let's go back to the console.
+            </div>
             <Link to='/'>   
-                <button className="Button" style={{width:'100px'}}>Back</button>
+                <button className="Button" style={{width:'100px',margin:'10%'}}>Back</button>
             </Link>
         </div>:null}
     </div>)
