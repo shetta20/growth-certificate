@@ -29,10 +29,10 @@ const Form = (props) => {
                 <div>
                     <label>Select award:</label>
                     <select className="select" style={{width:'70%'}} defaultValue={props.Details.award} value={props.Details.award} onChange={handleAwardChange}>
-                        <option value="dftc">Dont F the customer</option>
+                        <option value="dftc">Dont F the customer Award</option>
                         <option value="peer">Peer Award</option>
-                        <option value="champ">KPI Champion</option>
-                        <option value="rookie">Best Rookie</option>
+                        <option value="champ">KPI Champion Award</option>
+                        <option value="rookie">Best Rookie Award</option>
                     </select>
                 </div>
 
