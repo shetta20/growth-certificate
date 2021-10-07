@@ -3,13 +3,14 @@ import rookie from '../images/rookie.png'
 import peer from '../images/peer.png'
 import dftc from '../images/dftc.png'
 import champ from '../images/champ.png'
+import rocket from '../images/rocket.png'
 
 const Content = (props) => {
     return(        
     <div className="content">
         <div className="awardimage">
             {console.log(props.Details.awardIMG)}
-            <img src={props.Details.awardIMG === champ?champ:props.Details.awardIMG === peer?peer:props.Details.awardIMG === dftc?dftc:props.Details.awardIMG === rookie?rookie:null} style={{opacity:'0.25',zIndex:'1',position:'absolute',display:'flex',marginLeft:'5%',marginTop:'3%'}}/>
+            <img src={props.Details.awardIMG} style={{opacity:'0.25',zIndex:'1',position:'absolute',display:'flex',marginLeft:'10%',marginTop:'3%'}}/>
         </div>
         <div className="contenttext">
             <div>

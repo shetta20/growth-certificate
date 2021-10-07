@@ -18,14 +18,14 @@ const SignIn = (props) => {
     }
 
     return(
-        <div style={{display:'flex',flexDirection:'column',width:'50%',height:'50%',justifyContent:'center',alignItems:'center',border:'5px solid black'}}>
+        <div className="Signin">
             <label style={{fontSize:'120%'}}>User Name:</label>
             <input className="signin" type="text" onChange={handleUserChange}/>
 
             <label style={{fontSize:'120%'}}>Password:</label>
             <input className="signin" type="password" onChange={handlePasswordChange}/>
 
-            <button onClick={check}>Signin</button>
+            <button className="Button" style={{padding:'2%',width:'20%',marginTop:'2%'}} onClick={check}>Signin</button>
         </div>
     )
 }
