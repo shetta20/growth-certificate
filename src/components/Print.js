@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
-import Certificate from './Certificate';
+import Certificate from './Certificate/Certificate';
 import { useEffect } from 'react';
-import { BrowserRouter,Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const Print =(props) => {
     
@@ -13,7 +13,7 @@ const Print =(props) => {
       const print = () => {
         window.print()
         setTimeout(() => {
-          props.setDetails({name:props.Details.name,award:props.Details.award,awardIMG:props.Details.awardIMG,print:false,quarter:props.Details.quarter,year:props.Details.year})
+          props.setDetails({name:props.Details.name,award:props.Details.award,awardIMG:props.Details.awardIMG,img:props.Details.img,print:false,quarter:props.Details.quarter,year:props.Details.year,bordercolor:props.Details.bordercolor,nameFont:props.Details.nameFont,awardFont:props.Details.awardFont,line1:props.Details.line1,line2:props.Details.line2})
         }, 100);
       }
 
@@ -25,7 +25,7 @@ const Print =(props) => {
             <div style={{display:'flex',justifyContent:'center',alignItems:'center',fontSize:'150%'}}>
               Let's go back to the console.
             </div>
-            <Link to='/'>   
+            <Link to='/home'>   
                 <button className="Button" style={{width:'100px',margin:'10%'}}>Back</button>
             </Link>
         </div>:null}

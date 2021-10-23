@@ -11,9 +11,25 @@ import WarningBrowser from './components/WarningBrowser';
 
 
 function App() {
-  const [Details,setDetails] = useState({name:'Jason Statham',award:'dftc',awardIMG:peer,img:'peer',print:false,quarter:'Q1',year:'2021'})
+  const [Details,setDetails] = useState(
+    {
+      name:'Jason Statham',
+      award:'dftc',
+      awardIMG:peer,
+      img:'peer',
+      print:false,
+      quarter:'Q1',
+      year:'2021',
+      bordercolor:'#05438E',
+      nameFont:'Train One, cursive',
+      awardFont:'Varela Round, sans-serif',
+      line1:'has been awarded with the',
+      line2:'For the Quarter Q2 2021'
+    }
+    )
   const [signin,setsignin] = useState({user:'',password:'',success:false})
   const isChrome = !window.chrome;
+  const [bordercolor,setbordercolor] = useState("");
 
   return (
     <div className="App">

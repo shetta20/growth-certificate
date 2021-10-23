@@ -1,6 +1,7 @@
 import React from 'react'
-import signature from '../images/Signature.png'
-import signature2 from '../images/signature2.png'
+import signature from '../../images/Signature.png'
+import signature2 from '../../images/signature2.png'
+
 
 const SignaturePreview = () => {
     return(        <div style={{display:'flex',marginLeft:'8%',marginRight:'8%',height:'20%',marginTop:'45%'}}>
