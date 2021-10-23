@@ -4,17 +4,17 @@ const CertStyle = (props) => {
 
     const changeColor = (event) => {
         console.log("here",event.target.value)
-        props.setDetails({name:props.Details.name,award:props.Details.award,awardIMG:props.Details.awardIMG,img:props.Details.img,print:props.Details.print,quarter:props.Details.quarter,year:props.Details.year,bordercolor:event.target.value,nameFont:props.Details.nameFont,awardFont:props.Details.awardFont,line1:props.Details.line1,line2:props.Details.line2})
+        props.setDetails({name:props.Details.name,award:props.Details.award,awardIMG:props.Details.awardIMG,img:props.Details.img,print:props.Details.print,quarter:props.Details.quarter,month:props.Details.month,year:props.Details.year,bordercolor:event.target.value,nameFont:props.Details.nameFont,awardFont:props.Details.awardFont,line1:props.Details.line1,line2:props.Details.line2})
     }
 
     const AwardFontChange = (event) => {
         console.log("here",event.target.value)
-        props.setDetails({name:props.Details.name,award:props.Details.award,awardIMG:props.Details.awardIMG,img:props.Details.img,print:props.Details.print,quarter:props.Details.quarter,year:props.Details.year,bordercolor:props.Details.bordercolor,nameFont:props.Details.nameFont,awardFont:event.target.value,line1:props.Details.line1,line2:props.Details.line2})
+        props.setDetails({name:props.Details.name,award:props.Details.award,awardIMG:props.Details.awardIMG,img:props.Details.img,print:props.Details.print,quarter:props.Details.quarter,month:props.Details.month,year:props.Details.year,bordercolor:props.Details.bordercolor,nameFont:props.Details.nameFont,awardFont:event.target.value,line1:props.Details.line1,line2:props.Details.line2})
     }
 
     const NameFontChange = (event) => {
         console.log("here",event.target.value)
-        props.setDetails({name:props.Details.name,award:props.Details.award,awardIMG:props.Details.awardIMG,img:props.Details.img,print:props.Details.print,quarter:props.Details.quarter,year:props.Details.year,bordercolor:props.Details.bordercolor,nameFont:event.target.value,awardFont:props.Details.awardFont,line1:props.Details.line1,line2:props.Details.line2})
+        props.setDetails({name:props.Details.name,award:props.Details.award,awardIMG:props.Details.awardIMG,img:props.Details.img,print:props.Details.print,quarter:props.Details.quarter,month:props.Details.month,year:props.Details.year,bordercolor:props.Details.bordercolor,nameFont:event.target.value,awardFont:props.Details.awardFont,line1:props.Details.line1,line2:props.Details.line2})
     }
 
     return(

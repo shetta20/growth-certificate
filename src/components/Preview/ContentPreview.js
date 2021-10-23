@@ -23,7 +23,7 @@ const ContentPreview = (props) => {
             </div>
             <div style={{marginTop:'0',fontSize:'80%'}}>
             {/* <p style={{fontSize:'130%'}}>{`For the Quarter ${props.Details.quarter} ${props.Details.year}`}</p> */}
-            <p style={{fontSize:'130%'}}>{props.Details.line2}</p>
+            <p style={{fontSize:'130%'}}>{props.Details.line2 === 'ftqny'?`For the Quarter ${props.Details.quarter} of the year ${props.Details.year}`:props.Details.line2 === 'fty'?`For the year ${props.Details.year}`:props.Details.line2 === 'ftmny'?`For the month ${props.Details.month} of the year ${props.Details.year}`:props.Details.line2}</p>
             </div>
             <div className="font-link-2" style={{fontSize:'150%',marginTop:'2%',color:'black',fontFamily:props.Details.awardFont}}>
                 <b>Certified by</b>

@@ -19,12 +19,13 @@ function App() {
       img:'peer',
       print:false,
       quarter:'Q1',
+      month:'January',
       year:'2021',
       bordercolor:'#05438E',
       nameFont:'Train One, cursive',
       awardFont:'Varela Round, sans-serif',
       line1:'has been awarded with the',
-      line2:'For the Quarter Q2 2021'
+      line2:`For the Quarter Q1 and year 2021`
     }
     )
   const [signin,setsignin] = useState({user:'',password:'',success:false})
