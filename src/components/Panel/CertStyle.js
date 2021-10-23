@@ -21,7 +21,7 @@ const CertStyle = (props) => {
         <div className="CertStyle">
                     <div style={{width:'50%',height:'100%',border:'1px solid black',display:'flex',justifyContent:'center',alignItems:'center'}}>
                         <div>
-                            <label>Theme color:</label>
+                            <label>Select theme color:</label>
                             <input type="color" style={{width:'50px',height:'50px'}} defaultValue="#05438E" onChange={changeColor}/>
                         </div>
                     </div>
