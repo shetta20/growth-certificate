@@ -4,7 +4,7 @@ import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import Home from './components/Home';
 import Print from './components/Print';
 import SignIn from './components/SignIn';
-import peer from './images/peer.png'
+import champ from './images/champ.png'
 import rocket from './images/rocket.png'
 import Warning from './components/Warning';
 import WarningBrowser from './components/WarningBrowser';
@@ -15,7 +15,7 @@ function App() {
     {
       name:'Jason Statham',
       award:'dftc',
-      awardIMG:peer,
+      awardIMG:champ,
       img:'peer',
       print:false,
       quarter:'Q1',
