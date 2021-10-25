@@ -123,7 +123,7 @@ const Form = (props) => {
             <br />
             <div style={{width:'40%'}}>
                 <Link to='/certificate'>   
-                    <button className="Button" onClick={()=>props.setDetails({name:props.Details.name,award:props.Details.award,awardIMG:props.Details.awardIMG,img:props.Details.img,print:true,quarter:props.Details.quarter,year:props.Details.year,bordercolor:props.Details.bordercolor,nameFont:props.Details.nameFont,awardFont:props.Details.awardFont,line1:props.Details.line1,line2:props.Details.line2})}>Print certificate</button>
+                    <button className="Button" onClick={()=>props.setDetails({name:props.Details.name,award:props.Details.award,awardIMG:props.Details.awardIMG,img:props.Details.img,print:true,quarter:props.Details.quarter,month:props.Details.month,year:props.Details.year,bordercolor:props.Details.bordercolor,nameFont:props.Details.nameFont,awardFont:props.Details.awardFont,line1:props.Details.line1,line2:props.Details.line2})}>Print certificate</button>
                 </Link>
             </div>
         </div>
