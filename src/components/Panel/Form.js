@@ -73,15 +73,15 @@ const Form = (props) => {
                     </div>
                     <div>
                     <label>Enter the Line 1:</label>
-                        <input type="text" style={{width:'80%',padding:'1%'}} placeholder="Why?" onChange={handleLine1Change} />
+                        <input type="text" style={{width:'80%',padding:'1%'}} placeholder="Enter the line 1?" onChange={handleLine1Change} />
                     </div>
                     <div>
                     <label>Enter the Award name:</label>
-                        <input type="text" style={{width:'80%',padding:'1%'}} placeholder="Why?" onChange={handleAwardChange} />
+                        <input type="text" style={{width:'80%',padding:'1%'}} placeholder="Enter the award name" onChange={handleAwardChange} />
                     </div>
                     <div>
                     <label>Enter Line two:</label>
-                        <input type="text" style={{width:'80%',padding:'1%'}} placeholder="Why?" onChange={handleLine2Change} />
+                        <input type="text" style={{width:'80%',padding:'1%'}} placeholder="Enter the line 2.?" onChange={handleLine2Change} />
                     </div>
                 </div>
             </div>
