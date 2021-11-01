@@ -49,6 +49,7 @@ function App() {
           </Route>
           <Route path='/certificate'>
               <Print border={border} Details={Details} setDetails={setDetails}/>
+              {console.log(`${border.borderwidth} ${border.borderType} ${Details.bordercolor}`)}
           </Route>
         </Switch>
         </Router>:<WarningBrowser />}

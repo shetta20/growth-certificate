@@ -7,7 +7,7 @@ const CertificatePreview = (props) => {
     return(    
     <div>
     <div className="certificate2">
-      <div className="inner2" style={{border:`${props.border.borderwidth} ${props.border.borderType} #05438E`}}>
+      <div className="inner2" style={{border:`${props.border.borderwidth} ${props.border.borderType} ${props.Details.bordercolor}`}}>
       <LogoPreview />
       <ContentPreview Details={props.Details} setDetails={props.setDetails} color={props.Details.bordercolor}/>
       <SignaturePreview />

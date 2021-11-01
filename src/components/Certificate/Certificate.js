@@ -7,7 +7,8 @@ const Certificate = (props) => {
     return(    
     <div>
     <div className={props.print === true?"certificate":"nocertificate"}>
-      <div className="inner1" style={{border:`${props.border.borderwidth} ${props.border.borderType} #05438E`}}>
+      <div className="inner1" style={{border:`${props.border.borderwidth} ${props.border.borderType} ${props.Details.bordercolor}`}}>
+        {console.log(`${props.border.borderwidth} ${props.border.borderType} ${props.Details.bordercolor}`)}
       <Logo />
       <Content Details={props.Details} setDetails={props.setDetails} color={props.Details.bordercolor}/>
       <Signature />
