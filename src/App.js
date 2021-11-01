@@ -30,7 +30,10 @@ function App() {
     )
   const [signin,setsignin] = useState({user:'',password:'',success:false})
   const isChrome = !window.chrome;
-  const [bordercolor,setbordercolor] = useState("");
+  const [border,setborder] = useState({
+    borderType:'solid',
+    borderwidth:'10px'
+  });
 
   return (
     <div className="App">
@@ -39,13 +42,13 @@ function App() {
       <Router>
         <Switch>
           <Route path='/' exact>
-              {signin.success === true?<Home setDetails={setDetails} Details={Details}/>:<SignIn signin={signin} setsignin={setsignin}/>}
+              {signin.success === true?<Home setDetails={setDetails} setborder={setborder} Details={Details} border={border}/>:<SignIn signin={signin} setsignin={setsignin}/>}
           </Route>
           <Route path='/home' exact>
-              <Home setDetails={setDetails} Details={Details}/>
+              <Home border={border} setborder={setborder} setDetails={setDetails} Details={Details}/>
           </Route>
           <Route path='/certificate'>
-              <Print Details={Details} setDetails={setDetails}/>
+              <Print border={border} Details={Details} setDetails={setDetails}/>
           </Route>
         </Switch>
         </Router>:<WarningBrowser />}

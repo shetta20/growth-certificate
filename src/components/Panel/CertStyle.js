@@ -7,6 +7,14 @@ const CertStyle = (props) => {
         props.setDetails({name:props.Details.name,award:props.Details.award,awardIMG:props.Details.awardIMG,img:props.Details.img,print:props.Details.print,quarter:props.Details.quarter,month:props.Details.month,year:props.Details.year,bordercolor:event.target.value,nameFont:props.Details.nameFont,awardFont:props.Details.awardFont,line1:props.Details.line1,line2:props.Details.line2})
     }
 
+    const changeBorder = (event) =>{
+        props.setborder({borderType:event.target.value,borderwidth:props.border.borderwidth})
+    }
+
+    const changeBorderWidth = (event) =>{
+        props.setborder({borderType:props.border.borderType,borderwidth:event.target.value})
+    }
+
     const AwardFontChange = (event) => {
         console.log("here",event.target.value)
         props.setDetails({name:props.Details.name,award:props.Details.award,awardIMG:props.Details.awardIMG,img:props.Details.img,print:props.Details.print,quarter:props.Details.quarter,month:props.Details.month,year:props.Details.year,bordercolor:props.Details.bordercolor,nameFont:props.Details.nameFont,awardFont:event.target.value,line1:props.Details.line1,line2:props.Details.line2})
@@ -19,10 +27,27 @@ const CertStyle = (props) => {
 
     return(
         <div className="CertStyle">
-                    <div style={{width:'50%',height:'100%',border:'1px solid black',display:'flex',justifyContent:'center',alignItems:'center'}}>
+                    <div style={{width:'50%',height:'100%',border:'1px solid black',display:'flex',justifyContent:'center',alignItems:'center',flexDirection:'column'}}>
                         <div>
                             <label>Select theme color:</label>
                             <input type="color" style={{width:'50px',height:'50px'}} defaultValue="#05438E" onChange={changeColor}/>
+                        </div>
+                        <div>
+                            <select onChange={changeBorder}>
+                                <option>Solid</option>
+                                <option>dotted</option>
+                                <option>dashed</option>
+                                <option>double</option>
+                                <option>groove</option>
+                            </select>
+                            <select onChange={changeBorderWidth}>
+                                <option>1px</option>
+                                <option>2px</option>
+                                <option>3px</option>
+                                <option>6px</option>
+                                <option>9px</option>
+                                <option>15px</option>
+                            </select>
                         </div>
                     </div>
                     <div style={{width:'70%',height:'100%',border:'1px solid black',display:'flex',justifyContent:'center',alignItems:'center',flexDirection:'column'}}>
@@ -46,7 +71,7 @@ const CertStyle = (props) => {
                             </select>
                         </div>
                     </div>
-                </div>
+        </div>
     );
 }
 

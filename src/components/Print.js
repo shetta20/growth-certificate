@@ -19,7 +19,7 @@ const Print =(props) => {
 
     return(
     <div style={{width:'100%',height:'100%',display:'flex',justifyContent:'center',alignItems:'center'}}>
-        <Certificate print={props.Details.print} Details={props.Details} setDetails={props.setDetails}/>
+        <Certificate border={props.border} print={props.Details.print} Details={props.Details} setDetails={props.setDetails}/>
         {props.Details.print !== true?
         <div style={{margin:'2%'}}>
             <div style={{display:'flex',justifyContent:'center',alignItems:'center',fontSize:'150%'}}>

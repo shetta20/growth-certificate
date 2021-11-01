@@ -226,6 +226,10 @@ input{
   height: 490px;
 }
 
+.borderProp{
+  border:10px;
+}
+
 .font-link {
   font-family: 'Train One', cursive;
   font-weight: bold;

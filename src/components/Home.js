@@ -12,10 +12,10 @@ const Home = (props) => {
 <div className="Home">
         <div style={{display:'flex',justifyContent:'center',width:'100%',height:'97vh',flexDirection:'row',alignItems:'flex-start'}}>
             {console.log(screen)}
-            <Panel Details={props.Details} setDetails={props.setDetails} setscreen={setscreen} screen={screen}/>
+            <Panel border={props.border} setborder={props.setborder} Details={props.Details} setDetails={props.setDetails} setscreen={setscreen} screen={screen}/>
 
             <div style={{display:'flex',width:'60%',height:'100%',border:'1px solid black',flexDirection:'column',justifyContent:'center',alignItems:'center',border:'1px solid black',overflowY:'scroll'}}>
-                <CertificatePreview Details={props.Details} setDetails={props.setDetails}/>
+                <CertificatePreview border={props.border} Details={props.Details} setDetails={props.setDetails}/>
             </div>
         </div>
 </div>
