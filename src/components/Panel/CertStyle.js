@@ -32,15 +32,19 @@ const CertStyle = (props) => {
                             <label>Select theme color:</label>
                             <input type="color" style={{width:'50px',height:'50px'}} defaultValue="#05438E" onChange={changeColor}/>
                         </div>
-                        <div>
-                            <select onChange={changeBorder}>
+                        <br/>
+                        <div style={{display:'flex',flexDirection:'column',width:'60%'}}>
+                            <label>Select border type:</label>
+                            <select style={{padding:'5%',textAlign:'center'}} onChange={changeBorder}>
                                 <option>Solid</option>
                                 <option>dotted</option>
                                 <option>dashed</option>
                                 <option>double</option>
                                 <option>groove</option>
                             </select>
-                            <select onChange={changeBorderWidth}>
+                            <br/>
+                            <label>Select border thickness:</label>
+                            <select style={{padding:'5%',textAlign:'center'}} onChange={changeBorderWidth}>
                                 <option>1px</option>
                                 <option>2px</option>
                                 <option>3px</option>
