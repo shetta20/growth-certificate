@@ -11,7 +11,7 @@ const SignIn = (props) => {
     }
 
     const check = () => {
-        if(props.signin.user === 'cloud_growth' && props.signin.password === 'Growth123!')
+        if(props.signin.user === 'cloud_growth' && props.signin.password === 'Growth123!' || props.signin.user === 'Rajiv_Arora' && props.signin.password === 'P@ssword123!')
         {
             props.setsignin({user:props.signin.user,password:props.signin.password,success:true})
         }
